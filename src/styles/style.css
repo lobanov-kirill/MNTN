@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --colorTextAccent: #fbd784;
   --colorTextPrimary: #ffffff;
@@ -14,6 +17,9 @@ body {
   line-height: 1.78;
   color: var(--colorTextPrimary);
   background-color: var(--colorBg);
+  background-image: url(../img/background-hero.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .container {
   max-width: 1507px;
@@ -49,6 +55,17 @@ body {
   font-size: 17px;
   font-weight: 900;
   line-height: 1.18;
+  align-items: center;
+  display: flex;
+}
+
+.action-link::before {
+  content: "";
+  background-image: url(../img/account-img.svg);
+  height: 24px;
+  width: 24px;
+  display: block;
+  margin-right: 8px;
 }
 
 /*Hero*/
@@ -66,12 +83,37 @@ body {
   line-height: 1.17;
   letter-spacing: 0.33em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.hero-subtitle::before {
+  content: "";
+  background-color: var(--colorTextAccent);
+  width: 72px;
+  height: 2px;
+  display: block;
+  margin-right: 32px;
 }
 .hero-title {
   font-size: 88px;
   line-height: 1.14;
   font-family: var(--fontTitle);
   font-weight: 400;
+}
+
+.hero-link {
+  display: flex;
+  align-items: center;
+}
+
+.hero-link::after {
+  content: "";
+  background-image: url(../img/arrow-down.svg);
+  height: 24px;
+  width: 16px;
+  display: block;
+  margin-left: 8px;
 }
 
 /*Travel*/
@@ -83,6 +125,7 @@ body {
   flex-direction: column;
   gap: 200px;
 }
+
 .travel-item:nth-child(even) .step-photo {
   order: -1;
 }
@@ -102,6 +145,17 @@ body {
   letter-spacing: 0.33em;
   text-transform: uppercase;
   color: var(--colorTextAccent);
+  display: flex;
+  align-items: center;
+}
+
+.step-text::before {
+  content: "";
+  background-color: var(--colorTextAccent);
+  width: 72px;
+  height: 2px;
+  display: block;
+  margin-right: 24px;
 }
 
 .step-title {
@@ -115,6 +169,19 @@ body {
 .step-link {
   color: var(--colorTextAccent);
   font-weight: 900;
+  display: flex;
+  align-items: center;
+}
+
+.step-link::after {
+  content: "";
+  background-image: url(../img/arrow-right.svg);
+  height: 16px;
+  width: 24px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 10px;
 }
 /*Footer*/
 .footer {
