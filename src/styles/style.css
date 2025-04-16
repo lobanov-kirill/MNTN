@@ -20,6 +20,7 @@ body {
   background-image: url(../img/background-hero.webp);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: top;
 }
 .container {
   max-width: 1507px;
@@ -50,7 +51,10 @@ body {
   align-items: center;
   gap: 37px;
 }
-
+.nav-link:hover,
+.action-link:hover {
+  opacity: 0.8;
+}
 .action-link {
   font-size: 17px;
   font-weight: 900;
@@ -107,6 +111,10 @@ body {
   align-items: center;
 }
 
+.hero-link:hover {
+  opacity: 0.8;
+}
+
 .hero-link::after {
   content: "";
   background-image: url(../img/arrow-down.svg);
@@ -139,6 +147,19 @@ body {
   display: flex;
   flex-direction: column;
   gap: 27px;
+  padding-left: 150px;
+  background-image: url(../img/card-1.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding-top: 50px;
+}
+
+.travel-item:nth-child(2) .step-body {
+  background-image: url(../img/card-2.svg);
+}
+
+.travel-item:nth-child(3) .step-body {
+  background-image: url(../img/card-3.svg);
 }
 .step-text {
   line-height: 1.17;
@@ -173,6 +194,9 @@ body {
   align-items: center;
 }
 
+.step-link:hover {
+  opacity: 0.8;
+}
 .step-link::after {
   content: "";
   background-image: url(../img/arrow-right.svg);
@@ -221,4 +245,9 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.footer-blog-link:hover,
+.footer-mntn-link:hover {
+  opacity: 0.8;
 }
