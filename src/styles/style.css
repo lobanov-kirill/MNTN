@@ -61,6 +61,7 @@ body {
   line-height: 1.18;
   align-items: center;
   display: flex;
+  gap: 8px;
 }
 
 .action-link::before {
@@ -68,8 +69,6 @@ body {
   background-image: url(../img/account-img.svg);
   height: 24px;
   width: 24px;
-  display: block;
-  margin-right: 8px;
 }
 
 /*Hero*/
@@ -89,6 +88,7 @@ body {
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  gap: 32px;
 }
 
 .hero-subtitle::before {
@@ -96,8 +96,6 @@ body {
   background-color: var(--colorTextAccent);
   width: 72px;
   height: 2px;
-  display: block;
-  margin-right: 32px;
 }
 .hero-title {
   font-size: 88px;
@@ -109,6 +107,7 @@ body {
 .hero-link {
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .hero-link:hover {
@@ -120,8 +119,6 @@ body {
   background-image: url(../img/arrow-down.svg);
   height: 24px;
   width: 16px;
-  display: block;
-  margin-left: 8px;
 }
 
 /*Travel*/
@@ -168,6 +165,7 @@ body {
   color: var(--colorTextAccent);
   display: flex;
   align-items: center;
+  gap: 24px;
 }
 
 .step-text::before {
@@ -175,8 +173,6 @@ body {
   background-color: var(--colorTextAccent);
   width: 72px;
   height: 2px;
-  display: block;
-  margin-right: 24px;
 }
 
 .step-title {
@@ -192,6 +188,7 @@ body {
   font-weight: 900;
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .step-link:hover {
@@ -202,10 +199,8 @@ body {
   background-image: url(../img/arrow-right.svg);
   height: 16px;
   width: 24px;
-  display: block;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 10px;
 }
 /*Footer*/
 .footer {
